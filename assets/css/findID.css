@@ -1,0 +1,75 @@
+#findID-page {
+  font-family: var(--font-kr);
+}
+
+@media (max-width: 480px) {
+  .top {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .top > svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    width: 10%;
+  }
+  .top .find__text {
+    width: 90%;
+    font-size: 2rem;
+    line-height: var(--lh1);
+    text-align: center;
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .info .middle {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.05rem;
+    margin-top: 6rem;
+    width: 100%;
+  }
+  .info .middle > input {
+    font-family: var(--font-kr);
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1.4rem 0;
+    border-radius: 1.2rem;
+    border: 1.5px solid #cecece;
+    margin-top: 3rem;
+  }
+  .info .middle > input::-moz-placeholder {
+    font-family: var(--font-kr);
+    font-weight: 500;
+    color: #cccccc;
+    font-size: 1.7rem;
+    padding-left: 1.6rem;
+  }
+  .info .middle > input::placeholder {
+    font-family: var(--font-kr);
+    font-weight: 500;
+    color: #cccccc;
+    font-size: 1.7rem;
+    padding-left: 1.6rem;
+  }
+  .info .middle > input:required {
+    font-family: var(--font-kr);
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  .info .middle > input:focus {
+    outline: none;
+  }
+  .info .bottom > button {
+    font-size: 1.7rem;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 1.4rem 0;
+    border-radius: 0.8rem;
+  }
+}

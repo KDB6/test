@@ -3,6 +3,7 @@
 }
 
 @media (max-width: 480px) {
+  // logo
   .logo {
     position: relative;
     left: 19%;
@@ -12,6 +13,7 @@
     background: #cccccc;
   }
 
+  // id-pw
   .id-pw {
     display: flex;
     flex-direction: column;
@@ -45,6 +47,7 @@
     }
   }
 
+  // login__but
   .login__but {
     margin-top: 4rem;
 
@@ -60,6 +63,7 @@
     }
   }
 
+  // find
   .find {
     display: flex;
     align-items: center;
@@ -76,11 +80,13 @@
     }
   }
 
+  // auto
   .auto {
     text-align: center;
     font-size: 1.4rem;
   }
 
+  // signUp
   .signUp {
     > button {
       width: 100%;
@@ -95,6 +101,7 @@
     }
   }
 
+  // num
   .num {
     text-align: center;
     font-size: 1.2rem;

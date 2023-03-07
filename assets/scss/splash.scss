@@ -7,6 +7,7 @@
 }
 
 @media (max-width: 480px) {
+  // logo
   .logo {
     position: relative;
     left: 19%;
@@ -15,6 +16,7 @@
     background: #cccccc;
   }
 
+  // button__flex
   .button__flex {
     opacity: 1;
     display: flex;
