@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>findID</title>
+    <title>findPassRe</title>
 
     <link rel="stylesheet" href="../../assets/css/common.css" />
     <link rel="stylesheet" href="../../assets/css/font.css" />
     <link rel="stylesheet" href="../../assets/css/reset.css" />
 
-    <link rel="stylesheet" href="../../assets/css/findID.css" />
+    <link rel="stylesheet" href="../../assets/css/findPassRe.css" />
   </head>
   <body>
-    <section id="findID-page" class="container">
-      <!-- top -->
-      <div class="top">
+    <section id="findPassRe-page" class="container">
+      <!-- arrow -->
+      <div class="arrow">
         <svg
           id="bt_top_back_n"
           xmlns="http://www.w3.org/2000/svg"
@@ -42,32 +42,40 @@
             fill="none"
           />
         </svg>
-        <div class="find__text">아이디 찾기</div>
       </div>
 
-      <div class="info">
-        <!-- middle -->
-        <div class="middle">
-          <div>가입 시 입력한<br />생년월일을 입력해 주세요.</div>
+      <!-- pass__info -->
+      <div class="pass__info">
+        <!-- pass__text -->
+        <div class="pass__text">새로운 비밀번호를<br />입력해주세요.</div>
+        <!-- pass__check -->
+        <div class="pass__check">
           <input
             type="text"
             id="birth"
             name="birth"
-            placeholder="생년월일 6글자"
+            placeholder="비밀번호"
+            required
+          />
+          <div class="num__range">✔️ 8자 이상 20자 이내</div>
+          <div class="combination">
+            ✔️ 영어 대소문자, 숫자, 특수문자 중 2종류 이상 조합
+          </div>
+        </div>
+        <!-- pass__re__Check -->
+        <div class="pass__re__Check">
+          <input
+            type="text"
+            id="birth"
+            name="birth"
+            placeholder="비밀번호 확인"
             required
           />
         </div>
-
-        <!-- bottom -->
-        <div class="bottom">
-          <button
-            type="button"
-            onclick="location.href='../login/findIdCom.html'"
-          >
-            다음
-          </button>
-        </div>
       </div>
+      <button type="button" onclick="location.href='../login/login.html'">
+        확인
+      </button>
     </section>
   </body>
 </html>

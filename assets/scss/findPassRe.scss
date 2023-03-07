@@ -1,0 +1,106 @@
+#findPassRe-page {
+  font-family: var(--font-kr);
+}
+
+@media (max-width: 480px) {
+  // arrow
+  .arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 4rem;
+  }
+
+  //   pass__info
+  .pass__info {
+    // pass__text
+    .pass__text {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-top: 5rem;
+    }
+
+    // pass__check
+    .pass__check {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3.5rem;
+
+      input {
+        border-radius: 1.3rem;
+        border: 1.5px solid #cecece;
+        padding: 0.8em 0 0.8em 1em;
+
+        &::placeholder {
+          font-family: var(--font-kr);
+          font-weight: 300;
+          color: #cccccc;
+          font-size: 1.8rem;
+          padding-left: 0.3rem;
+        }
+
+        &:required {
+          font-family: var(--font-kr);
+          font-weight: 500;
+          font-size: 1.6rem;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .num__range {
+        font-size: 1.2rem;
+        margin-top: 0.6rem;
+      }
+
+      .combination {
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
+      }
+    }
+  }
+
+  //   pass__re__Check
+  .pass__re__Check {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    input {
+      border-radius: 1.3rem;
+      border: 1.5px solid #cecece;
+      padding: 0.8em 0 0.8em 1em;
+
+      &::placeholder {
+        font-family: var(--font-kr);
+        font-weight: 300;
+        color: #cccccc;
+        font-size: 1.8rem;
+        padding-left: 0.3rem;
+      }
+
+      &:required {
+        font-family: var(--font-kr);
+        font-weight: 500;
+        font-size: 1.6rem;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  button {
+    font-family: var(--font-kr);
+    font-size: 1.7rem;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 1.4rem 0;
+    border-radius: 0.8rem;
+    margin-top: 30rem;
+  }
+}

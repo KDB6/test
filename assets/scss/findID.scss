@@ -9,12 +9,6 @@
     align-items: center;
     margin-top: 4rem;
 
-    > svg {
-      width: 3.5rem;
-      height: 3.5rem;
-      width: 10%;
-    }
-
     .find__text {
       width: 90%;
       font-size: 2rem;
@@ -37,15 +31,15 @@
       letter-spacing: -0.05rem;
       margin-top: 6rem;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
 
       > input {
-        font-family: var(--font-kr);
-        font-size: 1.6rem;
-        width: 100%;
-        padding: 1.4rem 0;
-        border-radius: 1.2rem;
+        border-radius: 1.5rem;
         border: 1.5px solid #cecece;
-        margin-top: 3rem;
+        padding: 0.8em 0 0.8em 1em;
+        margin-top: 2rem;
 
         &::placeholder {
           font-family: var(--font-kr);
@@ -69,6 +63,7 @@
 
     //   bottom
     .bottom {
+      margin-bottom: 0.9rem;
       > button {
         font-family: var(--font-kr);
         font-size: 1.7rem;

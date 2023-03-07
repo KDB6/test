@@ -5,7 +5,7 @@
 @media (max-width: 480px) {
   .findIdCom {
     height: 60rem;
-    margin-top: 15rem;
+    margin-top: 12.3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,12 +50,12 @@
   }
   .findIdCom > button {
     font-family: var(--font-kr);
-    font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     width: 100%;
     background: #000;
     color: #fff;
     padding: 1.4rem 0;
     border-radius: 0.8rem;
+    margin-top: 27.5rem;
   }
 }
