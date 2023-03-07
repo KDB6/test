@@ -141,7 +141,7 @@ body.fixed {
 
 :root {
   --font-kr: "NotoSansKR";
-  --font-eng: "";
+  --font-eng: "Roboto";
   --font-w100: 100;
   --font-w300: 300;
   --font-w400: 400;

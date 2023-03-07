@@ -37,11 +37,9 @@ html {
   font-size: 62.5%;
 } /* 기본 100% = 16px을 62.5% = 10px 단위로 변경 */
 
-@media all and (max-width: 750px) {
-  html {
-    font-size: 50%;
-  } /* 문서 내 모든 rem단위 변경 */
-}
+// @media all and (max-width: 750px) {
+//   html { font-size: 50%; } /* 문서 내 모든 rem단위 변경 */
+// }
 
 /* 시멘트 태그 */
 article,
