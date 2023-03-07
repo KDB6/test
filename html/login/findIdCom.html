@@ -32,8 +32,8 @@
             </div>
             <div class="info">
               <div class="title">아이디</div>
-              <div class="detail">id1234</div>
-              <button type="submit">복사하기</button>
+              <div class="detail" id="detail"><p>id1234</p></div>
+              <button type="submit" id="idCopy">복사하기</button>
             </div>
           </div>
         </div>
@@ -42,5 +42,20 @@
         </button>
       </div>
     </section>
+
+    <script>
+      function copyClipboard() {
+        const detail = document.getElementById("detail").textContent;
+        const textarea = document.createElement("textarea");
+        textarea.textContent = detail;
+        document.body.append(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+      }
+
+      const idCopy = document.querySelector("#idCopy");
+      idCopy.addEventListener("click", copyClipboard);
+    </script>
   </body>
 </html>
