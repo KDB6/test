@@ -1,31 +1,37 @@
 #splash-page {
   font-family: var(--font-kr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 480px) {
   .logo {
     font-family: var(--font-eng);
-    font-size: 2.4rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 700;
     text-align: center;
+    color: #af0030;
   }
   .button__flex {
-    display: flex;
+    display: none;
     flex-direction: column;
+    margin-top: 3rem;
   }
   .button__flex > a {
     text-align: center;
     background: #fff;
-    border: 1px solid #adadad;
-    border-radius: 8px;
-    padding: 1.5rem;
+    border: 1px solid #c7c7c7;
+    border-radius: 10px;
+    padding: 1.4rem;
   }
   .button__flex > a:nth-child(2) {
     margin-top: 1rem;
   }
   .button__flex > a > button {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.6rem;
     color: var(--black);
     background: #fff;
