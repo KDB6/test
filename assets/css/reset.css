@@ -32,6 +32,10 @@ figcaption {
   -webkit-text-size-adjust: 100%;
 }
 
+button {
+  background: inherit;
+}
+
 /* 단위 변경 */
 html {
   font-size: 62.5%;

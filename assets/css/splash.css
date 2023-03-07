@@ -8,32 +8,32 @@
 
 @media (max-width: 480px) {
   .logo {
-    font-family: var(--font-eng);
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    color: #af0030;
+    position: relative;
+    left: 19%;
+    width: 60%;
+    padding: 2.5em 0em;
+    background: #cccccc;
   }
   .button__flex {
-    display: none;
+    opacity: 1;
+    display: flex;
     flex-direction: column;
     margin-top: 3rem;
   }
-  .button__flex > a {
+  .button__flex > button {
+    background: inherit;
+    font-family: var(--font-kr);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: var(--lh1);
+    padding: 1.4rem;
+    color: var(--black);
     text-align: center;
     background: #fff;
     border: 1px solid #c7c7c7;
     border-radius: 10px;
-    padding: 1.4rem;
   }
-  .button__flex > a:nth-child(2) {
+  .button__flex > button:nth-child(2) {
     margin-top: 1rem;
-  }
-  .button__flex > a > button {
-    font-family: var(--font-kr);
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: var(--black);
-    background: #fff;
   }
 }

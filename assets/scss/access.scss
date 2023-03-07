@@ -90,19 +90,16 @@
         }
       }
     }
-
-    > a {
-      > button {
-        margin-top: 10%;
-        font-family: var(--font-kr);
-        font-size: 1.6rem;
-        font-weight: var(--font-w400);
-        color: var(--white);
-        background: var(--black);
-        width: 100%;
-        padding: 1.4rem 0;
-        border-radius: 8px;
-      }
+    > button {
+      margin-top: 10%;
+      font-family: var(--font-kr);
+      font-size: 1.6rem;
+      font-weight: var(--font-w400);
+      color: var(--white);
+      background: var(--black);
+      width: 100%;
+      padding: 1.4rem 0;
+      border-radius: 8px;
     }
   }
 }

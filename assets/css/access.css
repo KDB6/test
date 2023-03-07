@@ -72,7 +72,7 @@
   .bottom .list > ul > li:nth-child(2) {
     margin-top: 2%;
   }
-  .bottom > a > button {
+  .bottom > button {
     margin-top: 10%;
     font-family: var(--font-kr);
     font-size: 1.6rem;

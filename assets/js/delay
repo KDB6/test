@@ -4,3 +4,26 @@ const delay = document.querySelector(".button__flex");
 setTimeout(function () {
   delay.style.display = "flex";
 }, 2000);
+
+let a1 = gsap.timeline({ delay: 1 });
+let a2 = gsap.timeline({ delay: 3 });
+
+a1.from(
+  ".logo",
+  {
+    y: 100,
+    duration: 2,
+    ease: "power4",
+  },
+  0
+);
+
+a2.from(
+  ".button__flex",
+  {
+    opacity: 0,
+    duration: 2,
+    ease: "power4",
+  },
+  0
+);
