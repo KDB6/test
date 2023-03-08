@@ -66,13 +66,22 @@
   }
   .find > div {
     padding: 0 2rem;
+    width: 30%;
+    text-align: center;
   }
   .find > div:nth-child(1) {
     border-right: 1px solid var(--black);
   }
   .auto {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.4rem;
+  }
+  .auto > svg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.3rem;
   }
   .signUp > button {
     width: 100%;

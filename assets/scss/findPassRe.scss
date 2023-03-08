@@ -53,11 +53,27 @@
       .num__range {
         font-size: 1.2rem;
         margin-top: 0.6rem;
+        display: flex;
+        align-items: center;
+
+        > svg {
+          width: 2rem;
+          height: 2rem;
+          margin-right: 0.2rem;
+        }
       }
 
       .combination {
         font-size: 1.2rem;
         margin-top: 0.4rem;
+        display: flex;
+        align-items: center;
+
+        > svg {
+          width: 2rem;
+          height: 2rem;
+          margin-right: 0.2rem;
+        }
       }
     }
   }

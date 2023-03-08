@@ -49,10 +49,24 @@
   .pass__info .pass__check .num__range {
     font-size: 1.2rem;
     margin-top: 0.6rem;
+    display: flex;
+    align-items: center;
+  }
+  .pass__info .pass__check .num__range > svg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.2rem;
   }
   .pass__info .pass__check .combination {
     font-size: 1.2rem;
     margin-top: 0.4rem;
+    display: flex;
+    align-items: center;
+  }
+  .pass__info .pass__check .combination > svg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.2rem;
   }
   .pass__re__Check {
     display: flex;
