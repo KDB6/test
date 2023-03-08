@@ -1,77 +1,76 @@
-#findID-page {
-  font-family: var(--font-kr);
-}
-
 @media (max-width: 480px) {
-  // top
-  .top {
-    display: flex;
-    align-items: center;
-    margin-top: 4rem;
+  #findID-page {
+    font-family: var(--font-kr);
 
-    .find__text {
-      width: 90%;
-      font-size: 2rem;
-      line-height: var(--lh1);
-      text-align: center;
-    }
-  }
-
-  //   info
-  .info {
-    height: 67rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    //   middle
-    .middle {
-      font-size: 2.4rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.05rem;
-      margin-top: 6rem;
-      width: 100%;
+    // top
+    .top {
       display: flex;
-      flex-direction: column;
-      margin-top: 5rem;
+      align-items: center;
+      margin-top: 4rem;
 
-      > input {
-        border-radius: 1.5rem;
-        border: 1.5px solid #cecece;
-        padding: 0.8em 0 0.8em 1em;
-        margin-top: 2rem;
-
-        &::placeholder {
-          font-family: var(--font-kr);
-          font-weight: 500;
-          color: #cccccc;
-          font-size: 1.7rem;
-          padding-left: 1.6rem;
-        }
-
-        &:required {
-          font-family: var(--font-kr);
-          font-weight: 500;
-          font-size: 1.6rem;
-        }
-
-        &:focus {
-          outline: none;
-        }
+      .find__text {
+        width: 90%;
+        font-size: 2rem;
+        line-height: var(--lh1);
+        text-align: center;
       }
     }
 
-    //   bottom
-    .bottom {
-      margin-bottom: 0.9rem;
-      > button {
-        font-family: var(--font-kr);
-        font-size: 1.7rem;
+    // info
+    .info {
+      height: 67rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // middle
+      .middle {
+        font-size: 2.4rem;
+        font-weight: var(--font-w700);
+        line-height: 1.2;
+        letter-spacing: -0.05rem;
+        margin-top: 6rem;
         width: 100%;
-        background: #000;
-        color: #fff;
-        padding: 1.4rem 0;
-        border-radius: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+
+        > input {
+          border-radius: 1.5rem;
+          border: 1.5px solid #cecece;
+          padding: 0.8em 0 0.8em 1em;
+          margin-top: 2rem;
+
+          &::placeholder {
+            font-family: var(--font-kr);
+            font-weight: var(--font-w500);
+            color: #cccccc;
+            font-size: 1.7rem;
+          }
+
+          &:required {
+            font-family: var(--font-kr);
+            font-weight: var(--font-w500);
+            font-size: 1.6rem;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      // bottom
+      .bottom {
+        margin-bottom: 0.9rem;
+        > button {
+          font-family: var(--font-kr);
+          font-size: 1.7rem;
+          width: 100%;
+          background: #000;
+          color: #fff;
+          padding: 1.4rem 0;
+          border-radius: 0.8rem;
+        }
       }
     }
   }

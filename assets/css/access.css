@@ -1,78 +1,77 @@
-#access-page {
-  font-family: var(--font-kr);
-}
-
 @media (max-width: 480px) {
-  /* top */
-  .top > h1 {
+  #access-page {
+    font-family: var(--font-kr);
+    /* top */
+    /* middle */
+    /* mid1 */
+    /* bottom */
+  }
+  #access-page .top > h1 {
     font-weight: 500;
     font-size: 1.6rem;
     color: var(--black);
     line-height: var(--lh1);
     margin-top: 30%;
   }
-  .top > h1 > strong {
+  #access-page .top > h1 > strong {
     font-size: 2.6rem;
     line-height: 1.5;
     font-weight: 800;
   }
-  .top > p {
+  #access-page .top > p {
     font-size: 1.4rem;
     line-height: var(--lh1);
     color: #757575;
     margin-top: 3%;
   }
-  /* middle */
-  .middle {
+  #access-page .middle {
     margin-top: 27%;
     margin-bottom: 27%;
   }
-  /* mid1 */
-  .mid1 {
+  #access-page .mid1 {
     display: flex;
     margin-top: 10%;
   }
-  .mid1 > div:nth-child(1) {
+  #access-page .mid1 > div:nth-child(1) {
     width: 6%;
   }
-  .mid1 > div:nth-child(1) > img {
+  #access-page .mid1 > div:nth-child(1) > img {
     width: 1.4rem;
     height: 1.4rem;
   }
-  .mid1 > div:nth-child(2) {
+  #access-page .mid1 > div:nth-child(2) {
     width: 92%;
   }
-  .mid1 > div:nth-child(2) > div:nth-child(1) {
+  #access-page .mid1 > div:nth-child(2) > div:nth-child(1) {
     font-size: 1.4rem;
     line-height: var(--lh1);
     color: var(--black);
     margin-bottom: 2%;
   }
-  .mid1 > div:nth-child(2) > div:nth-child(1) > em {
+  #access-page .mid1 > div:nth-child(2) > div:nth-child(1) > em {
     color: #757575;
   }
-  .mid1 > div:nth-child(2) > div:nth-child(2) {
+  #access-page .mid1 > div:nth-child(2) > div:nth-child(2) {
     font-size: 1.2rem;
     line-height: var(--lh1);
     color: #757575;
   }
-  /* bottom */
-  .line {
+  #access-page .line {
     width: 100%;
     border-top: 1px solid #757575;
     padding: 5% 0 0 0 !important;
   }
-  .bottom .list > ul > li {
+  #access-page .bottom .list > ul > li {
     list-style: outside;
     line-height: 1.4;
     font-size: 1.2rem;
     color: #757575;
     margin-left: 5%;
   }
-  .bottom .list > ul > li:nth-child(2) {
+  #access-page .bottom .list > ul > li:nth-child(2) {
     margin-top: 2%;
   }
-  .bottom > button {
+  #access-page .bottom > button {
     font-family: var(--font-kr);
     font-size: 1.7rem;
     width: 100%;

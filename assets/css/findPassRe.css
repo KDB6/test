@@ -1,106 +1,101 @@
-#findPassRe-page {
-  font-family: var(--font-kr);
-}
-
 @media (max-width: 480px) {
-  .arrow {
+  #findPassRe-page {
+    font-family: var(--font-kr);
+  }
+  #findPassRe-page .arrow {
     width: 3.5rem;
     height: 3.5rem;
     margin-top: 4rem;
   }
-  .pass__info .pass__text {
+  #findPassRe-page .pass__info .pass__text {
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: var(--font-w700);
     line-height: 1.1;
     margin-top: 5rem;
   }
-  .pass__info .pass__check {
+  #findPassRe-page .pass__info .pass__check {
     display: flex;
     flex-direction: column;
     margin-top: 3.5rem;
   }
-  .pass__info .pass__check input {
+  #findPassRe-page .pass__info .pass__check input {
     border-radius: 1.3rem;
     border: 1.5px solid #cecece;
     padding: 0.8em 0 0.8em 1em;
   }
-  .pass__info .pass__check input::-moz-placeholder {
+  #findPassRe-page .pass__info .pass__check input::-moz-placeholder {
     font-family: var(--font-kr);
-    font-weight: 300;
+    font-weight: var(--font-w500);
     color: #cccccc;
     font-size: 1.8rem;
-    padding-left: 0.3rem;
   }
-  .pass__info .pass__check input::placeholder {
+  #findPassRe-page .pass__info .pass__check input::placeholder {
     font-family: var(--font-kr);
-    font-weight: 300;
+    font-weight: var(--font-w500);
     color: #cccccc;
     font-size: 1.8rem;
-    padding-left: 0.3rem;
   }
-  .pass__info .pass__check input:required {
+  #findPassRe-page .pass__info .pass__check input:required {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     font-size: 1.6rem;
   }
-  .pass__info .pass__check input:focus {
+  #findPassRe-page .pass__info .pass__check input:focus {
     outline: none;
   }
-  .pass__info .pass__check .num__range {
+  #findPassRe-page .pass__info .pass__check .num__range {
     font-size: 1.2rem;
     margin-top: 0.6rem;
     display: flex;
     align-items: center;
   }
-  .pass__info .pass__check .num__range > svg {
+  #findPassRe-page .pass__info .pass__check .num__range > svg {
     width: 2rem;
     height: 2rem;
     margin-right: 0.2rem;
   }
-  .pass__info .pass__check .combination {
+  #findPassRe-page .pass__info .pass__check .combination {
     font-size: 1.2rem;
     margin-top: 0.4rem;
     display: flex;
     align-items: center;
   }
-  .pass__info .pass__check .combination > svg {
+  #findPassRe-page .pass__info .pass__check .combination > svg {
     width: 2rem;
     height: 2rem;
     margin-right: 0.2rem;
   }
-  .pass__re__Check {
+  #findPassRe-page .pass__re__Check {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
   }
-  .pass__re__Check input {
+  #findPassRe-page .pass__re__Check input {
     border-radius: 1.3rem;
     border: 1.5px solid #cecece;
     padding: 0.8em 0 0.8em 1em;
   }
-  .pass__re__Check input::-moz-placeholder {
+  #findPassRe-page .pass__re__Check input::-moz-placeholder {
     font-family: var(--font-kr);
-    font-weight: 300;
+    font-weight: var(--font-w500);
     color: #cccccc;
     font-size: 1.8rem;
-    padding-left: 0.3rem;
   }
-  .pass__re__Check input::placeholder {
+  #findPassRe-page .pass__re__Check input::placeholder {
     font-family: var(--font-kr);
-    font-weight: 300;
+    font-weight: var(--font-w500);
     color: #cccccc;
     font-size: 1.8rem;
-    padding-left: 0.3rem;
   }
-  .pass__re__Check input:required {
+  #findPassRe-page .pass__re__Check input:required {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     font-size: 1.6rem;
   }
-  .pass__re__Check input:focus {
+  #findPassRe-page .pass__re__Check input:focus {
     outline: none;
   }
-  button {
+  #findPassRe-page button {
     font-family: var(--font-kr);
     font-size: 1.7rem;
     width: 100%;

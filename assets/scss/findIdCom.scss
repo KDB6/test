@@ -1,77 +1,77 @@
-#findIdCom-page {
-  font-family: var(--font-kr);
-}
-
 @media (max-width: 480px) {
-  // findIdCom
-  .findIdCom {
-    height: 60rem;
-    margin-top: 12.3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  #findIdCom-page {
+    font-family: var(--font-kr);
 
-    > div:nth-child(1) {
-      font-size: 2.4rem;
-      font-weight: 700;
-      line-height: 1.15;
-    }
+    // findIdCom
+    .findIdCom {
+      height: 60rem;
+      margin-top: 12.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-    // id__info
-    .id__info {
-      background: #fff;
-      border: 1.5px solid #ccc;
-      border-radius: 10px;
-      padding: 0 2rem;
-      margin-top: 3.5rem;
+      > div:nth-child(1) {
+        font-size: 2.4rem;
+        font-weight: var(--font-w700);
+        line-height: 1.15;
+      }
 
-      // info
-      > .info {
-        display: flex;
-        align-items: center;
+      // id__info
+      .id__info {
+        background: #fff;
+        border: 1.5px solid #ccc;
+        border-radius: 10px;
+        padding: 0 2rem;
+        margin-top: 3.5rem;
+
+        // info
+        > .info {
+          display: flex;
+          align-items: center;
+          font-size: 1.7rem;
+          font-weight: var(--font-w500);
+          border-bottom: 1.5px solid #ccc;
+
+          > .title {
+            width: 30%;
+            margin: 1.5rem 0 1.5rem 0.5rem;
+          }
+          > .detail {
+            width: 68%;
+          }
+        }
+
+        // 네번째 인포
+        div:nth-child(4) {
+          border: 0;
+
+          > div:nth-child(2) {
+            width: 40%;
+          }
+
+          > button {
+            font-family: var(--font-kr);
+            font-weight: var(--font-w700);
+            color: #7a7a7a;
+            font-size: 1.4rem;
+            padding: 0.3rem 0.5rem;
+            background-color: #e1ecff;
+            border-radius: 0.5rem;
+          }
+        }
+      }
+
+      // button
+      > button {
+        font-family: var(--font-kr);
         font-size: 1.7rem;
-        font-weight: 500;
-        border-bottom: 1.5px solid #ccc;
-
-        > .title {
-          width: 30%;
-          margin: 1.5rem 0 1.5rem 0.5rem;
-        }
-        > .detail {
-          width: 68%;
-        }
+        width: 100%;
+        background: #000;
+        color: #fff;
+        padding: 1.4rem 0;
+        border-radius: 0.8rem;
+        margin-top: 27.5rem;
       }
-
-      // 네번째 인포
-      div:nth-child(4) {
-        border: 0;
-
-        > div:nth-child(2) {
-          width: 40%;
-        }
-
-        > button {
-          font-family: var(--font-kr);
-          font-weight: 500;
-          color: #7a7a7a;
-          font-size: 1.4rem;
-          padding: 0.3rem 0.5rem;
-          background-color: #e1ecff;
-          border-radius: 0.5rem;
-        }
-      }
-    }
-
-    // button
-    > button {
-      font-family: var(--font-kr);
-      font-size: 1.7rem;
-      width: 100%;
-      background: #000;
-      color: #fff;
-      padding: 1.4rem 0;
-      border-radius: 0.8rem;
-      margin-top: 27.5rem;
     }
   }
 }

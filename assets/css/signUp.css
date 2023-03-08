@@ -1,77 +1,76 @@
-#signUp-page {
-  font-family: var(--font-kr);
-}
-
 @media (max-width: 480px) {
-  .prev {
+  #signUp-page {
+    font-family: var(--font-kr);
+  }
+  #signUp-page .prev {
     margin-top: 4rem;
     position: relative;
     left: -1rem;
   }
-  .progress {
+  #signUp-page .progress {
     width: 100%;
     height: 0.5rem;
     background: #cecece;
   }
-  .progress .inside {
+  #signUp-page .progress .inside {
     width: 15%;
     height: 0.5rem;
     background: #000;
     border-radius: 1rem;
   }
-  .signUp__info {
+  #signUp-page .signUp__info {
     display: flex;
     flex-direction: column;
     margin-top: 3.5rem;
   }
-  .signUp__info .signUp__text {
+  #signUp-page .signUp__info .signUp__text {
     display: flex;
     justify-content: space-between;
     align-items: end;
   }
-  .signUp__info .signUp__text .msg {
+  #signUp-page .signUp__info .signUp__text .msg {
     font-size: 2.4rem;
     line-height: 1.15;
-    font-weight: 900;
+    font-weight: var(--font-w900);
   }
-  .signUp__info .signUp__text .page {
+  #signUp-page .signUp__info .signUp__text .page {
     font-size: 1.6rem;
     color: var(--white);
     padding: 0.2rem 0.7rem;
     background: #c8c8c8;
     border-radius: 1rem;
   }
-  .signUp__info .singUp__id {
+  #signUp-page .signUp__info .singUp__id {
     margin-top: 3.5rem;
   }
-  .signUp__info .singUp__id .singUp__id-announcement .id-announcement1 {
+  #signUp-page .signUp__info .singUp__id .singUp__id-announcement .id-announcement1 {
     display: flex;
     align-items: center;
     margin-top: 0.5rem;
   }
-  .signUp__info .singUp__id .singUp__id-announcement .id-announcement1 > svg {
+  #signUp-page .signUp__info .singUp__id .singUp__id-announcement .id-announcement1 > svg {
     width: 2rem;
     height: 2rem;
   }
-  .signUp__info .singUp__id .singUp__id-announcement .id-announcement1 > div:nth-child(2) {
+  #signUp-page .signUp__info .singUp__id .singUp__id-announcement .id-announcement1 > div:nth-child(2) {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: var(--font-w500);
   }
-  .signUp__info .singUp__id .singUp__id-announcement .id-announcement2 {
+  #signUp-page .signUp__info .singUp__id .singUp__id-announcement .id-announcement2 {
     display: flex;
     align-items: center;
   }
-  .signUp__info .singUp__id .singUp__id-announcement .id-announcement2 > svg {
+  #signUp-page .signUp__info .singUp__id .singUp__id-announcement .id-announcement2 > svg {
     width: 2rem;
     height: 2rem;
   }
-  .signUp__info .singUp__id .singUp__id-announcement .id-announcement2 > div:nth-child(2) {
+  #signUp-page .signUp__info .singUp__id .singUp__id-announcement .id-announcement2 > div:nth-child(2) {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: var(--font-w500);
   }
-  .signUp__info .singUp__id .singUp__id-write > input {
+  #signUp-page .signUp__info .singUp__id .singUp__id-write > input {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     font-size: 1.6rem;
     line-height: var(--lh1);
     width: 100%;
@@ -80,58 +79,58 @@
     border-radius: 1rem;
     padding-left: 1.5rem;
   }
-  .signUp__info .singUp__id .singUp__id-write > input::-moz-placeholder {
+  #signUp-page .signUp__info .singUp__id .singUp__id-write > input::-moz-placeholder {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     color: #cccccc;
     font-size: 1.7rem;
   }
-  .signUp__info .singUp__id .singUp__id-write > input::placeholder {
+  #signUp-page .signUp__info .singUp__id .singUp__id-write > input::placeholder {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     color: #cccccc;
     font-size: 1.7rem;
   }
-  .signUp__info .singUp__id .singUp__id-write > input:required {
+  #signUp-page .signUp__info .singUp__id .singUp__id-write > input:required {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     font-size: 1.6rem;
     color: var(--black);
   }
-  .signUp__info .singUp__id .singUp__id-write > input:focus {
+  #signUp-page .signUp__info .singUp__id .singUp__id-write > input:focus {
     outline: none;
   }
-  .signUp__info .singUp__pw {
+  #signUp-page .signUp__info .singUp__pw {
     margin-top: 2rem;
   }
-  .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement1 {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement1 {
     display: flex;
     align-items: center;
     margin-top: 0.5rem;
   }
-  .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement1 > svg {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement1 > svg {
     width: 2rem;
     height: 2rem;
   }
-  .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement1 > div:nth-child(2) {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement1 > div:nth-child(2) {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: var(--font-w500);
   }
-  .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement2 {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement2 {
     display: flex;
     align-items: center;
   }
-  .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement2 > svg {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement2 > svg {
     width: 2rem;
     height: 2rem;
   }
-  .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement2 > div:nth-child(2) {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement2 > div:nth-child(2) {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: var(--font-w500);
   }
-  .signUp__info .singUp__pw .singUp__pw-write > input {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-write > input {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     line-height: var(--lh1);
     font-size: 1.6rem;
     width: 100%;
@@ -140,31 +139,31 @@
     border-radius: 1rem;
     padding-left: 1.5rem;
   }
-  .signUp__info .singUp__pw .singUp__pw-write > input::-moz-placeholder {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-write > input::-moz-placeholder {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     color: #cccccc;
   }
-  .signUp__info .singUp__pw .singUp__pw-write > input::placeholder {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-write > input::placeholder {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     color: #cccccc;
   }
-  .signUp__info .singUp__pw .singUp__pw-write > input:required {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-write > input:required {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     font-size: 1.6rem;
     color: var(--black);
   }
-  .signUp__info .singUp__pw .singUp__pw-write > input:focus {
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-write > input:focus {
     outline: none;
   }
-  .signUp__info .singUp__pwRe {
+  #signUp-page .signUp__info .singUp__pwRe {
     margin-top: 2rem;
   }
-  .signUp__info .singUp__pwRe .singUp__pwRe-write > input {
+  #signUp-page .signUp__info .singUp__pwRe .singUp__pwRe-write > input {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     font-size: 1.6rem;
     line-height: var(--lh1);
     width: 100%;
@@ -173,27 +172,27 @@
     border-radius: 1rem;
     padding-left: 1.5rem;
   }
-  .signUp__info .singUp__pwRe .singUp__pwRe-write > input::-moz-placeholder {
+  #signUp-page .signUp__info .singUp__pwRe .singUp__pwRe-write > input::-moz-placeholder {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     color: #cccccc;
     font-size: 1.7rem;
   }
-  .signUp__info .singUp__pwRe .singUp__pwRe-write > input::placeholder {
+  #signUp-page .signUp__info .singUp__pwRe .singUp__pwRe-write > input::placeholder {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     color: #cccccc;
     font-size: 1.7rem;
   }
-  .signUp__info .singUp__pwRe .singUp__pwRe-write > input:required {
+  #signUp-page .signUp__info .singUp__pwRe .singUp__pwRe-write > input:required {
     font-family: var(--font-kr);
-    font-weight: 500;
+    font-weight: var(--font-w500);
     font-size: 1.6rem;
   }
-  .signUp__info .singUp__pwRe .singUp__pwRe-write > input:focus {
+  #signUp-page .signUp__info .singUp__pwRe .singUp__pwRe-write > input:focus {
     outline: none;
   }
-  .signUp__info button {
+  #signUp-page .signUp__info button {
     font-family: var(--font-kr);
     font-size: 1.7rem;
     color: #fff;
