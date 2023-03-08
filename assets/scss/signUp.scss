@@ -1,0 +1,235 @@
+#signUp-page {
+  font-family: var(--font-kr);
+}
+
+@media (max-width: 480px) {
+  .prev {
+    margin-top: 4rem;
+    position: relative;
+    left: -1rem;
+  }
+
+  .progress {
+    width: 100%;
+    height: 0.5rem;
+    background: #cecece;
+
+    .inside {
+      width: 15%;
+      height: 0.5rem;
+      background: #000;
+      border-radius: 1rem;
+    }
+  }
+
+  .signUp__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+
+    .signUp__text {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      .msg {
+        font-size: 2.4rem;
+        line-height: 1.15;
+        font-weight: 900;
+      }
+
+      .page {
+        font-size: 1.6rem;
+        color: var(--white);
+        padding: 0.2rem 0.7rem;
+        background: #c8c8c8;
+        border-radius: 1rem;
+      }
+    }
+
+    .singUp__id {
+      margin-top: 3.5rem;
+
+      .singUp__id-announcement {
+        .id-announcement1 {
+          display: flex;
+          align-items: center;
+          margin-top: 0.5rem;
+
+          > svg {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          > div:nth-child(2) {
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+
+        .id-announcement2 {
+          display: flex;
+          align-items: center;
+
+          > svg {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          > div:nth-child(2) {
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+      }
+      .singUp__id-write {
+        > input {
+          font-family: var(--font-kr);
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: var(--lh1);
+          width: 100%;
+          padding: 1.5rem 0;
+          border: 1.5px solid #c8c8c8;
+          border-radius: 1rem;
+          padding-left: 1.5rem;
+
+          &::placeholder {
+            font-family: var(--font-kr);
+            font-weight: 500;
+            color: #cccccc;
+            font-size: 1.7rem;
+          }
+
+          &:required {
+            font-family: var(--font-kr);
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--black);
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .singUp__pw {
+      margin-top: 2rem;
+
+      .singUp__pw-announcement {
+        .pw-announcement1 {
+          display: flex;
+          align-items: center;
+          margin-top: 0.5rem;
+
+          > svg {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          > div:nth-child(2) {
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+
+        .pw-announcement2 {
+          display: flex;
+          align-items: center;
+
+          > svg {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          > div:nth-child(2) {
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .singUp__pw-write {
+        > input {
+          font-family: var(--font-kr);
+          font-weight: 500;
+          line-height: var(--lh1);
+          font-size: 1.6rem;
+          width: 100%;
+          padding: 1.5rem 0;
+          border: 1.5px solid #c8c8c8;
+          border-radius: 1rem;
+          padding-left: 1.5rem;
+
+          &::placeholder {
+            font-family: var(--font-kr);
+            font-weight: 500;
+            color: #cccccc;
+          }
+
+          &:required {
+            font-family: var(--font-kr);
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--black);
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .singUp__pwRe {
+      margin-top: 2rem;
+
+      .singUp__pwRe-write {
+        > input {
+          font-family: var(--font-kr);
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: var(--lh1);
+          width: 100%;
+          padding: 1.5rem 0;
+          border: 1.5px solid #c8c8c8;
+          border-radius: 1rem;
+          padding-left: 1.5rem;
+
+          &::placeholder {
+            font-family: var(--font-kr);
+            font-weight: 500;
+            color: #cccccc;
+            font-size: 1.7rem;
+          }
+
+          &:required {
+            font-family: var(--font-kr);
+            font-weight: 500;
+            font-size: 1.6rem;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    button {
+      font-family: var(--font-kr);
+      font-size: 1.7rem;
+      color: #fff;
+      background: #000;
+      padding: 1.4rem 0;
+      width: 100%;
+      border-radius: 0.8rem;
+      box-sizing: border-box;
+      //   position: absolute;
+      //   bottom: 4rem;
+      margin-top: 18rem;
+    }
+  }
+}
