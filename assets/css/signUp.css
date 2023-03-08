@@ -43,6 +43,9 @@
   #signUp-page .signUp__info .singUp__id {
     margin-top: 3.5rem;
   }
+  #signUp-page .signUp__info .singUp__id .singUp__id-announcement {
+    margin-left: 0.2rem;
+  }
   #signUp-page .signUp__info .singUp__id .singUp__id-announcement .id-announcement1 {
     display: flex;
     align-items: center;
@@ -102,6 +105,9 @@
   }
   #signUp-page .signUp__info .singUp__pw {
     margin-top: 2rem;
+  }
+  #signUp-page .signUp__info .singUp__pw .singUp__pw-announcement {
+    margin-left: 0.2rem;
   }
   #signUp-page .signUp__info .singUp__pw .singUp__pw-announcement .pw-announcement1 {
     display: flex;
