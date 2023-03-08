@@ -143,6 +143,7 @@ body.fixed {
 
 // 변수
 :root {
+  // font
   --font-kr: "NotoSansKR";
   --font-eng: "Roboto";
   --font-w100: 100;
@@ -155,8 +156,10 @@ body.fixed {
   --font-w800: 800;
   --font-w900: 900;
 
+  // line-height
   --lh1: 1;
 
+  // color
   --black: #000;
   --white: #fff;
 }
