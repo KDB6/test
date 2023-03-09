@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>userInfo</title>
+
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/font.css" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+
+    <link rel="stylesheet" href="../../assets/css/userInfo.css" />
+  </head>
+  <body>
+    <section id="userInfo-page" class="">
+      <!-- prev -->
+      <div class="prev">
+        <svg
+          id="bt_top_back_n"
+          xmlns="http://www.w3.org/2000/svg"
+          width="44"
+          height="44"
+          viewBox="0 0 44 44"
+        >
+          <path
+            id="패스_17807"
+            data-name="패스 17807"
+            d="M20.207,30.468l-8.333-8.333L20.207,13.8"
+            transform="translate(-0.15 -0.15)"
+            fill="none"
+            stroke="#000"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+          <rect
+            id="사각형_23661"
+            data-name="사각형 23661"
+            width="44"
+            height="44"
+            fill="none"
+          />
+        </svg>
+      </div>
+
+      <!-- progress -->
+      <div class="progress">
+        <div class="inside"></div>
+      </div>
+
+      <!-- write__info -->
+      <div class="user__info container">
+        <!-- top__text -->
+        <div class="top__text">
+          <div class="msg">사업자 정보를<br />입력해 주세요.</div>
+          <div class="page">
+            <div><span>2</span>/6</div>
+          </div>
+        </div>
+
+        <!-- user__input -->
+        <div class="user__input">
+          <!-- user__input-one -->
+          <div class="user__input-one">
+            <label for="user__input-one"></label>
+            <input
+              type="text"
+              id="user__input-one"
+              name="user__input-one"
+              placeholder="사업자등록번호"
+              required
+            />
+          </div>
+
+          <!-- user__input-two -->
+          <div class="user__input-two">
+            <label for="user__input-two"></label>
+            <input
+              type="text"
+              id="user__input-two"
+              name="user__input-two"
+              placeholder="상호명"
+              required
+            />
+          </div>
+
+          <!-- user__input-three -->
+          <div class="user__input-three">
+            <label for="user__input-three"></label>
+            <input
+              type="text"
+              id="user__input-three"
+              name="user__input-three"
+              placeholder="대표자명"
+              required
+            />
+          </div>
+
+          <!-- user__input-four -->
+          <div class="user__input-four">
+            <label for="user__input-four"></label>
+            <input
+              type="text"
+              id="user__input-four"
+              name="user__input-four"
+              placeholder="사업자 주소 (선택)"
+              required
+            />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5831 13.5489C19.204 11.7018 19.1293 9.69155 18.3731 7.89557C17.6169 6.09959 16.2312 4.64137 14.4761 3.79465C12.7209 2.94793 10.7171 2.77094 8.84074 3.29691C6.96438 3.82287 5.3445 5.01562 4.28521 6.65125C3.22592 8.28688 2.80005 10.2529 3.08754 12.1803C3.37504 14.1076 4.35614 15.8638 5.84666 17.1191C7.33718 18.3744 9.23463 19.0424 11.1828 18.9979C13.131 18.9534 14.9959 18.1993 16.4275 16.8772"
+                stroke="#000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16.5 16.958L21.5 21.958"
+                stroke="#2B3F6C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <!-- user__input-five -->
+          <div class="user__input-five">
+            <label for="user__input-five"></label>
+            <input
+              type="text"
+              id="user__input-five"
+              name="user__input-five"
+              placeholder="사업자 상세 주소 (선택)"
+              required
+            />
+          </div>
+
+          <!-- user__input-six -->
+          <div class="user__input-six">
+            <label for="user__input-six"></label>
+            <input
+              type="text"
+              id="user__input-six"
+              name="user__input-six"
+              placeholder="사업장 번호 (선택)"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- button -->
+        <button type="submit" onclick="location.href='../login/findIdCom.html'">
+          다음
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

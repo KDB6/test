@@ -72,8 +72,6 @@
     font-weight: var(--font-w500);
   }
   #signUp-page .signUp__info .singUp__id .singUp__id-write > input {
-    font-family: var(--font-kr);
-    font-weight: var(--font-w500);
     font-size: 1.6rem;
     line-height: var(--lh1);
     width: 100%;
@@ -135,8 +133,6 @@
     font-weight: var(--font-w500);
   }
   #signUp-page .signUp__info .singUp__pw .singUp__pw-write > input {
-    font-family: var(--font-kr);
-    font-weight: var(--font-w500);
     line-height: var(--lh1);
     font-size: 1.6rem;
     width: 100%;

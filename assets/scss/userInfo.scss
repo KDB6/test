@@ -1,16 +1,16 @@
 @media (max-width: 480px) {
-  #signUp-page {
+  #userInfo-page {
     font-family: var(--font-kr);
 
     // prev
-    .prev {
-      margin-top: 4rem;
-      position: relative;
-      left: -1rem;
+    > .prev {
+      margin: 3rem 0 0.5rem 2rem;
+      svg {
+      }
     }
 
     // progress
-    .progress {
+    > .progress {
       width: 100%;
       height: 0.5rem;
       background: #cecece;
@@ -23,16 +23,14 @@
       }
     }
 
-    // signUp__info
-    .signUp__info {
-      display: flex;
-      flex-direction: column;
-      margin-top: 3.5rem;
-
-      .signUp__text {
+    // user__info
+    .user__info {
+      // top__text
+      .top__text {
         display: flex;
         justify-content: space-between;
         align-items: end;
+        margin-top: 2.5rem;
 
         .msg {
           font-size: 2.4rem;
@@ -49,46 +47,14 @@
         }
       }
 
-      // singUp__id
-      .singUp__id {
-        margin-top: 3.5rem;
+      // user__input
+      .user__input {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
 
-        .singUp__id-announcement {
-          margin-left: 0.2rem;
-
-          .id-announcement1 {
-            display: flex;
-            align-items: center;
-            margin-top: 0.5rem;
-
-            > svg {
-              width: 2rem;
-              height: 2rem;
-            }
-
-            > div:nth-child(2) {
-              font-size: 1.2rem;
-              font-weight: var(--font-w500);
-            }
-          }
-
-          .id-announcement2 {
-            display: flex;
-            align-items: center;
-
-            > svg {
-              width: 2rem;
-              height: 2rem;
-            }
-
-            > div:nth-child(2) {
-              font-size: 1.2rem;
-              font-weight: var(--font-w500);
-            }
-          }
-        }
-
-        .singUp__id-write {
+        // user__input-one
+        .user__input-one {
           > input {
             font-size: 1.6rem;
             line-height: var(--lh1);
@@ -117,85 +83,12 @@
             }
           }
         }
-      }
 
-      // singUp__pw
-      .singUp__pw {
-        margin-top: 2rem;
+        // user__input-two
+        .user__input-two {
+          margin-top: 1rem;
 
-        .singUp__pw-announcement {
-          margin-left: 0.2rem;
-
-          .pw-announcement1 {
-            display: flex;
-            align-items: center;
-            margin-top: 0.5rem;
-
-            > svg {
-              width: 2rem;
-              height: 2rem;
-            }
-
-            > div:nth-child(2) {
-              font-size: 1.2rem;
-              font-weight: var(--font-w500);
-            }
-          }
-
-          .pw-announcement2 {
-            display: flex;
-            align-items: center;
-
-            > svg {
-              width: 2rem;
-              height: 2rem;
-            }
-
-            > div:nth-child(2) {
-              font-size: 1.2rem;
-              font-weight: var(--font-w500);
-            }
-          }
-        }
-
-        .singUp__pw-write {
           > input {
-            line-height: var(--lh1);
-            font-size: 1.6rem;
-            width: 100%;
-            padding: 1.5rem 0;
-            border: 1.5px solid #c8c8c8;
-            border-radius: 1rem;
-            padding-left: 1.5rem;
-
-            &::placeholder {
-              font-family: var(--font-kr);
-              font-weight: var(--font-w500);
-              color: #cccccc;
-            }
-
-            &:required {
-              font-family: var(--font-kr);
-              font-weight: var(--font-w500);
-              font-size: 1.6rem;
-              color: var(--black);
-            }
-
-            &:focus {
-              outline: none;
-            }
-          }
-        }
-      }
-
-      // singUp__pwRe
-      .singUp__pwRe {
-        margin-top: 2rem;
-
-        .singUp__pwRe-write {
-          > input {
-            font-family: var(--font-kr);
-            font-weight: var(--font-w500);
             font-size: 1.6rem;
             line-height: var(--lh1);
             width: 100%;
@@ -215,6 +108,149 @@
               font-family: var(--font-kr);
               font-weight: var(--font-w500);
               font-size: 1.6rem;
+              color: var(--black);
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        // user__input-three
+        .user__input-three {
+          margin-top: 1rem;
+
+          > input {
+            font-size: 1.6rem;
+            line-height: var(--lh1);
+            width: 100%;
+            padding: 1.5rem 0;
+            border: 1.5px solid #c8c8c8;
+            border-radius: 1rem;
+            padding-left: 1.5rem;
+
+            &::placeholder {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              color: #cccccc;
+              font-size: 1.7rem;
+            }
+
+            &:required {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              font-size: 1.6rem;
+              color: var(--black);
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        // user__input-four
+        .user__input-four {
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin-top: 1rem;
+
+          > input {
+            font-size: 1.6rem;
+            line-height: var(--lh1);
+            width: 100%;
+            padding: 1.5rem 0;
+            border: 1.5px solid #c8c8c8;
+            border-radius: 1rem;
+            padding-left: 1.5rem;
+
+            &::placeholder {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              color: var(--black);
+              font-size: 1.7rem;
+            }
+
+            &:required {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              font-size: 1.6rem;
+              color: var(--black);
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          > svg {
+            position: absolute;
+            right: 1rem;
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+
+        // user__input-five
+        .user__input-five {
+          margin-top: 1rem;
+
+          > input {
+            font-size: 1.6rem;
+            line-height: var(--lh1);
+            width: 100%;
+            padding: 1.5rem 0;
+            border: 1.5px solid #c8c8c8;
+            border-radius: 1rem;
+            padding-left: 1.5rem;
+
+            &::placeholder {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              color: #cccccc;
+              font-size: 1.7rem;
+            }
+
+            &:required {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              font-size: 1.6rem;
+              color: var(--black);
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        // user__input-six
+        .user__input-six {
+          margin-top: 1rem;
+
+          > input {
+            font-size: 1.6rem;
+            line-height: var(--lh1);
+            width: 100%;
+            padding: 1.5rem 0;
+            border: 1.5px solid #c8c8c8;
+            border-radius: 1rem;
+            padding-left: 1.5rem;
+
+            &::placeholder {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              color: #cccccc;
+              font-size: 1.7rem;
+            }
+
+            &:required {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              font-size: 1.6rem;
+              color: var(--black);
             }
 
             &:focus {
@@ -234,9 +270,9 @@
         width: 100%;
         border-radius: 0.8rem;
         box-sizing: border-box;
-        //   position: absolute;
-        //   bottom: 4rem;
-        margin-top: 18rem;
+        // position: absolute;
+        // bottom: 4rem;
+        margin-top: 10rem;
       }
     }
   }

@@ -1,0 +1,257 @@
+@media (max-width: 480px) {
+  #userInfo-page {
+    font-family: var(--font-kr);
+  }
+  #userInfo-page > .prev {
+    margin: 3rem 0 0.5rem 2rem;
+  }
+  #userInfo-page > .progress {
+    width: 100%;
+    height: 0.5rem;
+    background: #cecece;
+  }
+  #userInfo-page > .progress .inside {
+    width: 16.7%;
+    height: 0.5rem;
+    background: #000;
+    border-radius: 1rem;
+  }
+  #userInfo-page .user__info .top__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 2.5rem;
+  }
+  #userInfo-page .user__info .top__text .msg {
+    font-size: 2.4rem;
+    line-height: 1.15;
+    font-weight: var(--font-w900);
+  }
+  #userInfo-page .user__info .top__text .page {
+    font-size: 1.6rem;
+    color: var(--white);
+    padding: 0.2rem 0.7rem;
+    background: #c8c8c8;
+    border-radius: 1rem;
+  }
+  #userInfo-page .user__info .user__input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-one > input {
+    font-size: 1.6rem;
+    line-height: var(--lh1);
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 1.5px solid #c8c8c8;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-one > input::-moz-placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-one > input::placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-one > input:required {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    font-size: 1.6rem;
+    color: var(--black);
+  }
+  #userInfo-page .user__info .user__input .user__input-one > input:focus {
+    outline: none;
+  }
+  #userInfo-page .user__info .user__input .user__input-two {
+    margin-top: 1rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-two > input {
+    font-size: 1.6rem;
+    line-height: var(--lh1);
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 1.5px solid #c8c8c8;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-two > input::-moz-placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-two > input::placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-two > input:required {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    font-size: 1.6rem;
+    color: var(--black);
+  }
+  #userInfo-page .user__info .user__input .user__input-two > input:focus {
+    outline: none;
+  }
+  #userInfo-page .user__info .user__input .user__input-three {
+    margin-top: 1rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-three > input {
+    font-size: 1.6rem;
+    line-height: var(--lh1);
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 1.5px solid #c8c8c8;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-three > input::-moz-placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-three > input::placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-three > input:required {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    font-size: 1.6rem;
+    color: var(--black);
+  }
+  #userInfo-page .user__info .user__input .user__input-three > input:focus {
+    outline: none;
+  }
+  #userInfo-page .user__info .user__input .user__input-four {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-four > input {
+    font-size: 1.6rem;
+    line-height: var(--lh1);
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 1.5px solid #c8c8c8;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-four > input::-moz-placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: var(--black);
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-four > input::placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: var(--black);
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-four > input:required {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    font-size: 1.6rem;
+    color: var(--black);
+  }
+  #userInfo-page .user__info .user__input .user__input-four > input:focus {
+    outline: none;
+  }
+  #userInfo-page .user__info .user__input .user__input-four > svg {
+    position: absolute;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-five {
+    margin-top: 1rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-five > input {
+    font-size: 1.6rem;
+    line-height: var(--lh1);
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 1.5px solid #c8c8c8;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-five > input::-moz-placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-five > input::placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-five > input:required {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    font-size: 1.6rem;
+    color: var(--black);
+  }
+  #userInfo-page .user__info .user__input .user__input-five > input:focus {
+    outline: none;
+  }
+  #userInfo-page .user__info .user__input .user__input-six {
+    margin-top: 1rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-six > input {
+    font-size: 1.6rem;
+    line-height: var(--lh1);
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 1.5px solid #c8c8c8;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-six > input::-moz-placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-six > input::placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  #userInfo-page .user__info .user__input .user__input-six > input:required {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    font-size: 1.6rem;
+    color: var(--black);
+  }
+  #userInfo-page .user__info .user__input .user__input-six > input:focus {
+    outline: none;
+  }
+  #userInfo-page .user__info button {
+    font-family: var(--font-kr);
+    font-size: 1.7rem;
+    color: #fff;
+    background: #000;
+    padding: 1.4rem 0;
+    width: 100%;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+    margin-top: 10rem;
+  }
+}
