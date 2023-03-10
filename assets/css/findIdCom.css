@@ -53,11 +53,13 @@
   #findIdCom-page .findIdCom > button {
     font-family: var(--font-kr);
     font-size: 1.7rem;
-    width: 100%;
-    background: #000;
     color: #fff;
+    background: #000;
     padding: 1.4rem 0;
+    width: 84.01%;
     border-radius: 0.8rem;
-    margin-top: 27.5rem;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 3.5rem;
   }
 }
