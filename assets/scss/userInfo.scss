@@ -5,8 +5,6 @@
     // prev
     > .prev {
       margin: 3rem 0 0.5rem 2rem;
-      svg {
-      }
     }
 
     // progress
@@ -281,9 +279,8 @@
         width: 100%;
         border-radius: 0.8rem;
         box-sizing: border-box;
-        // position: absolute;
-        // bottom: 4rem;
-        margin-top: 10rem;
+        position: absolute;
+        bottom: 5rem;
       }
     }
   }
@@ -363,7 +360,7 @@
 
         .line {
           width: 100%;
-          border: 0.15rem solid #ccc;
+          border: 1.5px solid #ccc;
           margin-top: 1.5rem;
         }
 
