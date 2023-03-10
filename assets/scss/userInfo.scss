@@ -295,10 +295,11 @@
     height: 90vh;
     width: 100%;
     position: absolute;
+    border-radius: 2rem 2rem 0 0;
 
     .modal__cont {
       // modal__top
-      .modal__top {
+      .modal__top-info {
         display: flex;
         align-items: center;
         margin-top: 2rem;

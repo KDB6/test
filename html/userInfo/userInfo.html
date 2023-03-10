@@ -159,11 +159,12 @@
       </div>
     </section>
 
+    <!-- footer -->
     <footer class="modal">
       <!-- modal -->
       <div class="modal__cont container">
         <!-- top -->
-        <div class="modal__top">
+        <div class="modal__top-info">
           <svg
             id="bt_top_back_n"
             xmlns="http://www.w3.org/2000/svg"
@@ -192,7 +193,20 @@
           </svg>
           <div class="modal__top-text">사업장 주소 검색</div>
         </div>
+        <div class="modal__top-search">
+          <label for="modal__top-search"></label>
+          <input
+            type="text"
+            id="modal__top-search"
+            name="modal__top-search"
+            placeholder="사업장 번호 (선택)"
+            required
+          />
+        </div>
       </div>
+
+      <!-- line -->
+      <div class="line"></div>
     </footer>
 
     <!-- 유효성 -->

@@ -259,17 +259,18 @@
     height: 90vh;
     width: 100%;
     position: absolute;
+    border-radius: 2rem 2rem 0 0;
   }
-  .modal .modal__cont .modal__top {
+  .modal .modal__cont .modal__top-info {
     display: flex;
     align-items: center;
     margin-top: 2rem;
   }
-  .modal .modal__cont .modal__top > svg {
+  .modal .modal__cont .modal__top-info > svg {
     width: 3.6rem;
     height: 3.6rem;
   }
-  .modal .modal__cont .modal__top .modal__top-text {
+  .modal .modal__cont .modal__top-info .modal__top-text {
     font-size: 1.8rem;
     font-weight: 500;
   }
