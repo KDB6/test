@@ -35,4 +35,7 @@
   #splash-page .button__flex > button:nth-child(2) {
     margin-top: 1rem;
   }
+  #splash-page .button__flex > button:nth-child(3) {
+    margin-top: 1rem;
+  }
 }
