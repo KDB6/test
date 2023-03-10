@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../assets/css/userInfo.css" />
   </head>
   <body>
-    <section id="userInfo-page" class="">
+    <section id="userInfo-page">
       <!-- prev -->
       <div class="prev">
         <svg
@@ -71,6 +71,8 @@
               placeholder="사업자등록번호"
               required
             />
+            <div class="invalid">유효하지 않은 사업자등록번호입니다.</div>
+            <div class="existent">이미 등록되어 있는 사업자등록번호입니다.</div>
           </div>
 
           <!-- user__input-two -->
@@ -99,14 +101,7 @@
 
           <!-- user__input-four -->
           <div class="user__input-four">
-            <label for="user__input-four"></label>
-            <input
-              type="text"
-              id="user__input-four"
-              name="user__input-four"
-              placeholder="사업자 주소 (선택)"
-              required
-            />
+            <div>사업자 주소 (선택)</div>
             <svg
               width="24"
               height="24"
@@ -132,6 +127,7 @@
           </div>
 
           <!-- user__input-five -->
+          <!-- option select로 변경 -->
           <div class="user__input-five">
             <label for="user__input-five"></label>
             <input
@@ -157,10 +153,93 @@
         </div>
 
         <!-- button -->
-        <button type="submit" onclick="location.href='../login/findIdCom.html'">
+        <button class="match" type="submit" onclick="location.href='#'">
           다음
         </button>
       </div>
     </section>
+
+    <footer>
+      <!-- modal -->
+      <div class="modal">
+        <!-- top -->
+        <div class="modal__top">
+          <svg
+            id="bt_top_back_n"
+            xmlns="http://www.w3.org/2000/svg"
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+          >
+            <path
+              id="패스_17807"
+              data-name="패스 17807"
+              d="M20.207,30.468l-8.333-8.333L20.207,13.8"
+              transform="translate(-0.15 -0.15)"
+              fill="none"
+              stroke="#000"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <rect
+              id="사각형_23661"
+              data-name="사각형 23661"
+              width="44"
+              height="44"
+              fill="none"
+            />
+          </svg>
+          <div class="modal__top-text">사업장 주소 검색</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 유효성 -->
+    <script>
+      const invalid = document.querySelector(".invalid"); // 없는 사업자등록번호
+      const existent = document.querySelector(".existent"); // 이미 등록된 사업자등록번호
+      const matchButton = document.querySelector(".match"); // 조건이 맞을 시 넘어가는 버튼
+
+      const userIuputOne = document.getElementById("user__input-one"); // 유효성 검사
+
+      // invalid.addEventListener("");
+      // existent.addEventListener("");
+      // matchButton.addEventListener("");
+
+      let numTxt = /^[0-9\-\-]/;
+      //(숫자,-)
+
+      function checkMatch() {
+        if (userNum.value == "") {
+          alert("??");
+          userIuputOne.focus();
+          return;
+        }
+      }
+
+      function matchNext() {
+        if (numTxt.test(userNum.value) == false) {
+          invalid.classList.add("show");
+          userNum.focus();
+        }
+        return;
+      }
+    </script>
+
+    <!-- modal -->
+    <script>
+      const addressBtn = document.querySelector(".user__input-four");
+      const addressPrev = document.querySelector(".modal__top > svg");
+      const addressWin = document.querySelector(".modal");
+
+      addressBtn.addEventListener("click", () => {
+        addressWin.classList.add("show");
+        addressWin.classList.remove("hide");
+      });
+      addressPrev.addEventListener("click", () => {
+        addressWin.classList.add("hide");
+      });
+    </script>
   </body>
 </html>

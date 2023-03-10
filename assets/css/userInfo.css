@@ -11,7 +11,7 @@
     background: #cecece;
   }
   #userInfo-page > .progress .inside {
-    width: 16.7%;
+    width: 33.4%;
     height: 0.5rem;
     background: #000;
     border-radius: 1rem;
@@ -68,6 +68,28 @@
   }
   #userInfo-page .user__info .user__input .user__input-one > input:focus {
     outline: none;
+  }
+  #userInfo-page .user__info .user__input .user__input-one .invalid {
+    font-size: 1.2rem;
+    color: #ff0000;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5rem;
+    display: none;
+  }
+  #userInfo-page .user__info .user__input .user__input-one .invalid.show {
+    display: block;
+  }
+  #userInfo-page .user__info .user__input .user__input-one .existent {
+    font-size: 1.2rem;
+    color: #ff0000;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5rem;
+    display: none;
+  }
+  #userInfo-page .user__info .user__input .user__input-one .existent.show {
+    display: block;
   }
   #userInfo-page .user__info .user__input .user__input-two {
     margin-top: 1rem;
@@ -140,36 +162,13 @@
     align-items: center;
     position: relative;
     margin-top: 1rem;
-  }
-  #userInfo-page .user__info .user__input .user__input-four > input {
     font-size: 1.6rem;
-    line-height: var(--lh1);
-    width: 100%;
-    padding: 1.5rem 0;
+    font-weight: 500;
+    background: #fff;
     border: 1.5px solid #c8c8c8;
     border-radius: 1rem;
-    padding-left: 1.5rem;
-  }
-  #userInfo-page .user__info .user__input .user__input-four > input::-moz-placeholder {
-    font-family: var(--font-kr);
-    font-weight: var(--font-w500);
-    color: var(--black);
-    font-size: 1.7rem;
-  }
-  #userInfo-page .user__info .user__input .user__input-four > input::placeholder {
-    font-family: var(--font-kr);
-    font-weight: var(--font-w500);
-    color: var(--black);
-    font-size: 1.7rem;
-  }
-  #userInfo-page .user__info .user__input .user__input-four > input:required {
-    font-family: var(--font-kr);
-    font-weight: var(--font-w500);
-    font-size: 1.6rem;
-    color: var(--black);
-  }
-  #userInfo-page .user__info .user__input .user__input-four > input:focus {
-    outline: none;
+    color: #000;
+    padding: 1.5rem 0 1.5rem 1.2rem;
   }
   #userInfo-page .user__info .user__input .user__input-four > svg {
     position: absolute;
@@ -253,5 +252,24 @@
     border-radius: 0.8rem;
     box-sizing: border-box;
     margin-top: 10rem;
+  }
+  .modal {
+    font-family: var(--font-kr);
+    background: #ccc;
+    height: 100rem;
+    width: 100%;
+    position: absolute;
+  }
+  .modal .modal__top {
+    display: flex;
+    align-items: center;
+  }
+  .modal .modal__top > svg {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  .modal .modal__top .modal__top-text {
+    font-size: 1.8rem;
+    font-weight: 500;
   }
 }
