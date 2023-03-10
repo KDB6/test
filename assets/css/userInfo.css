@@ -252,8 +252,7 @@
     width: 84.01%;
     border-radius: 0.8rem;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 3.5rem;
+    margin-top: 10rem;
   }
   footer {
     /* 모달 애니메이션 */
