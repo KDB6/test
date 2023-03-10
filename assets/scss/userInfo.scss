@@ -292,23 +292,26 @@
   .modal {
     font-family: var(--font-kr);
     background: #ccc;
-    height: 100rem;
+    height: 90vh;
     width: 100%;
     position: absolute;
 
-    // modal__top
-    .modal__top {
-      display: flex;
-      align-items: center;
+    .modal__cont {
+      // modal__top
+      .modal__top {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
 
-      > svg {
-        width: 3.6rem;
-        height: 3.6rem;
-      }
+        > svg {
+          width: 3.6rem;
+          height: 3.6rem;
+        }
 
-      .modal__top-text {
-        font-size: 1.8rem;
-        font-weight: 500;
+        .modal__top-text {
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
       }
     }
   }
