@@ -288,31 +288,189 @@
     }
   }
 
-  // modal
-  .modal {
-    font-family: var(--font-kr);
-    background: #ccc;
-    height: 90vh;
-    width: 100%;
-    position: absolute;
-    border-radius: 2rem 2rem 0 0;
+  footer {
+    .modal__win {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(20, 20, 20, 0);
+      top: 0;
+      display: none;
 
-    .modal__cont {
-      // modal__top
-      .modal__top-info {
-        display: flex;
-        align-items: center;
-        margin-top: 2rem;
+      // modal
+      .modal {
+        font-family: var(--font-kr);
+        height: 90vh;
+        width: 100%;
+        background: #fff;
+        border-radius: 1.5rem 1.5rem 0 0;
+        bottom: 0;
+        z-index: 5;
+        position: fixed;
 
-        > svg {
-          width: 3.6rem;
-          height: 3.6rem;
+        .modal__cont {
+          // modal__top
+          .modal__top-info {
+            display: flex;
+            align-items: center;
+            margin-top: 2.5rem;
+
+            > svg {
+              width: 3.6rem;
+              height: 3.6rem;
+            }
+            .modal__close {
+              z-index: 15;
+            }
+
+            .modal__top-text {
+              font-size: 1.8rem;
+              font-weight: 500;
+            }
+          }
         }
 
-        .modal__top-text {
-          font-size: 1.8rem;
-          font-weight: 500;
+        .modal__top-search {
+          > input {
+            font-size: 1.6rem;
+            line-height: var(--lh1);
+            width: 100%;
+            padding: 1.5rem 0;
+            border: 1.5px solid #c8c8c8;
+            border-radius: 1rem;
+            padding-left: 1.5rem;
+            margin-top: 2rem;
+
+            &::placeholder {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              color: #cccccc;
+              font-size: 1.7rem;
+            }
+
+            &:required {
+              font-family: var(--font-kr);
+              font-weight: var(--font-w500);
+              font-size: 1.6rem;
+              color: var(--black);
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
         }
+
+        .line {
+          width: 100%;
+          border: 0.15rem solid #ccc;
+          margin-top: 1.5rem;
+        }
+
+        .search__completion {
+          text-align-last: left;
+
+          .completion__text {
+            padding: 1.3rem 0 1.3rem 0;
+            border-bottom: 0.15rem solid #c8c8c8;
+
+            &:last-child {
+              border: 0;
+            }
+            > h2 {
+              font-size: 1.6rem;
+            }
+
+            > p {
+              font-size: 1.2rem;
+              color: #cccccc;
+            }
+          }
+        }
+      }
+    }
+
+    .modal__win.back {
+      background-color: rgba(20, 20, 20, 0.767);
+      transition: all 2s;
+    }
+    /* 모달 애니메이션 */
+    .modal__win.show {
+      /* 전체 배경 */
+      animation: slideOutUp 1s ease forwards;
+      display: block;
+    }
+    .modal__win.show.hide {
+      animation: slideOutDown 0.3s 0.5s ease backwards;
+      display: none;
+    }
+    // .modal__win.show .modal {
+    //   /* 스크립트 박스 */
+    //   animation: zoomOut 0.5s 1s ease forwards;
+    // }
+    // .modal__win.show.hide .modal {
+    //   animation: zoomIn 0.5s ease forwards;
+    // }
+    .modal__win.show .modal__close {
+      /* 닫기 배경 */
+      // animation: opacityOut 0.5s 1s ease forwards;
+    }
+    .modal__win.show.hide .modal__close {
+      // animation: opacityIn 0.5s ease backwards;
+      display: none;
+    }
+    @keyframes slideOutUp {
+      from {
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+      }
+
+      to {
+        // visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+    @keyframes slideOutDown {
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+
+      to {
+        visibility: hidden;
+        transform: translate3d(0, 100%, 0);
+      }
+    }
+    @keyframes opacityOut {
+      0% {
+        transform: opacity(0);
+      }
+      100% {
+        transform: opacity(1);
+      }
+    }
+    @keyframes opacityIn {
+      0% {
+        transform: opacity(0);
+      }
+      100% {
+        transform: opacity(1);
+      }
+    }
+    @keyframes zoomOut {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    @keyframes zoomIn {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0);
       }
     }
   }

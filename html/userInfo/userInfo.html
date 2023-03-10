@@ -160,53 +160,95 @@
     </section>
 
     <!-- footer -->
-    <footer class="modal">
-      <!-- modal -->
-      <div class="modal__cont container">
-        <!-- top -->
-        <div class="modal__top-info">
-          <svg
-            id="bt_top_back_n"
-            xmlns="http://www.w3.org/2000/svg"
-            width="44"
-            height="44"
-            viewBox="0 0 44 44"
-          >
-            <path
-              id="패스_17807"
-              data-name="패스 17807"
-              d="M20.207,30.468l-8.333-8.333L20.207,13.8"
-              transform="translate(-0.15 -0.15)"
-              fill="none"
-              stroke="#000"
-              stroke-linecap="square"
-              stroke-linejoin="round"
-              stroke-width="2"
-            />
-            <rect
-              id="사각형_23661"
-              data-name="사각형 23661"
-              width="44"
-              height="44"
-              fill="none"
-            />
-          </svg>
-          <div class="modal__top-text">사업장 주소 검색</div>
-        </div>
-        <div class="modal__top-search">
-          <label for="modal__top-search"></label>
-          <input
-            type="text"
-            id="modal__top-search"
-            name="modal__top-search"
-            placeholder="사업장 번호 (선택)"
-            required
-          />
+    <footer>
+      <div class="modal__win">
+        <div class="modal">
+          <!-- modal -->
+          <div class="modal__cont container">
+            <!-- top -->
+            <div class="modal__top-info">
+              <svg
+                class="modal__close"
+                id="bt_top_back_n"
+                xmlns="http://www.w3.org/2000/svg"
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+              >
+                <path
+                  id="패스_17807"
+                  data-name="패스 17807"
+                  d="M20.207,30.468l-8.333-8.333L20.207,13.8"
+                  transform="translate(-0.15 -0.15)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+                <rect
+                  id="사각형_23661"
+                  data-name="사각형 23661"
+                  width="44"
+                  height="44"
+                  fill="none"
+                />
+              </svg>
+              <div class="modal__top-text">사업장 주소 검색</div>
+            </div>
+            <div class="modal__top-search">
+              <label for="modal__top-search"></label>
+              <input
+                type="text"
+                id="modal__top-search"
+                name="modal__top-search"
+                placeholder="도로명, 지번으로 검색"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- line -->
+          <div class="line"></div>
+
+          <!-- search__completion -->
+          <div class="search__completion container">
+            <!-- completion__text -->
+            <div class="completion__text">
+              <h2>서울특별시 성동구 <strong>왕십리로</strong> 55</h2>
+              <p>서울특별시 성동구 성수동 1가 656-3</p>
+            </div>
+            <div class="completion__text">
+              <h2>서울특별시 성동구 <strong>왕십리로</strong> 55</h2>
+              <p>서울특별시 성동구 성수동 1가 656-3</p>
+            </div>
+            <div class="completion__text">
+              <h2>서울특별시 성동구 <strong>왕십리로</strong> 55</h2>
+              <p>서울특별시 성동구 성수동 1가 656-3</p>
+            </div>
+            <div class="completion__text">
+              <h2>서울특별시 성동구 <strong>왕십리로</strong> 55</h2>
+              <p>서울특별시 성동구 성수동 1가 656-3</p>
+            </div>
+            <div class="completion__text">
+              <h2>서울특별시 성동구 <strong>왕십리로</strong> 55</h2>
+              <p>서울특별시 성동구 성수동 1가 656-3</p>
+            </div>
+            <div class="completion__text">
+              <h2>서울특별시 성동구 <strong>왕십리로</strong> 55</h2>
+              <p>서울특별시 성동구 성수동 1가 656-3</p>
+            </div>
+            <div class="completion__text">
+              <h2>서울특별시 성동구 <strong>왕십리로</strong> 55</h2>
+              <p>서울특별시 성동구 성수동 1가 656-3</p>
+            </div>
+            <div class="completion__text">
+              <h2>서울특별시 성동구 <strong>왕십리로</strong> 55</h2>
+              <p>서울특별시 성동구 성수동 1가 656-3</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- line -->
-      <div class="line"></div>
     </footer>
 
     <!-- 유효성 -->
@@ -244,15 +286,20 @@
     <!-- modal -->
     <script>
       const addressBtn = document.querySelector(".user__input-four");
-      const addressPrev = document.querySelector(".modal__top > svg");
-      const addressWin = document.querySelector(".modal");
+      const addressPrev = document.querySelector(".modal__close");
+      const addressWin = document.querySelector(".modal__win");
 
       addressBtn.addEventListener("click", () => {
         addressWin.classList.add("show");
         addressWin.classList.remove("hide");
+
+        setTimeout(() => {
+          addressWin.classList.add("back");
+        }, 800);
       });
       addressPrev.addEventListener("click", () => {
         addressWin.classList.add("hide");
+        addressWin.classList.remove("back");
       });
     </script>
   </body>

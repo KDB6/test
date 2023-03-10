@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 480px) {
   #userInfo-page {
     font-family: var(--font-kr);
@@ -253,25 +254,165 @@
     box-sizing: border-box;
     margin-top: 10rem;
   }
-  .modal {
+  footer {
+    /* 모달 애니메이션 */
+  }
+  footer .modal__win {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0);
+    top: 0;
+    display: none;
+  }
+  footer .modal__win .modal {
     font-family: var(--font-kr);
-    background: #ccc;
     height: 90vh;
     width: 100%;
-    position: absolute;
-    border-radius: 2rem 2rem 0 0;
+    background: #fff;
+    border-radius: 1.5rem 1.5rem 0 0;
+    bottom: 0;
+    z-index: 5;
+    position: fixed;
   }
-  .modal .modal__cont .modal__top-info {
+  footer .modal__win .modal .modal__cont .modal__top-info {
     display: flex;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
-  .modal .modal__cont .modal__top-info > svg {
+  footer .modal__win .modal .modal__cont .modal__top-info > svg {
     width: 3.6rem;
     height: 3.6rem;
   }
-  .modal .modal__cont .modal__top-info .modal__top-text {
+  footer .modal__win .modal .modal__cont .modal__top-info .modal__close {
+    z-index: 15;
+  }
+  footer .modal__win .modal .modal__cont .modal__top-info .modal__top-text {
     font-size: 1.8rem;
     font-weight: 500;
+  }
+  footer .modal__win .modal .modal__top-search > input {
+    font-size: 1.6rem;
+    line-height: var(--lh1);
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 1.5px solid #c8c8c8;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+  }
+  footer .modal__win .modal .modal__top-search > input::-moz-placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  footer .modal__win .modal .modal__top-search > input::placeholder {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    color: #cccccc;
+    font-size: 1.7rem;
+  }
+  footer .modal__win .modal .modal__top-search > input:required {
+    font-family: var(--font-kr);
+    font-weight: var(--font-w500);
+    font-size: 1.6rem;
+    color: var(--black);
+  }
+  footer .modal__win .modal .modal__top-search > input:focus {
+    outline: none;
+  }
+  footer .modal__win .modal .line {
+    width: 100%;
+    border: 0.15rem solid #ccc;
+    margin-top: 1.5rem;
+  }
+  footer .modal__win .modal .search__completion {
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+  footer .modal__win .modal .search__completion .completion__text {
+    padding: 1.3rem 0 1.3rem 0;
+    border-bottom: 0.15rem solid #c8c8c8;
+  }
+  footer .modal__win .modal .search__completion .completion__text:last-child {
+    border: 0;
+  }
+  footer .modal__win .modal .search__completion .completion__text > h2 {
+    font-size: 1.6rem;
+  }
+  footer .modal__win .modal .search__completion .completion__text > p {
+    font-size: 1.2rem;
+    color: #cccccc;
+  }
+  footer .modal__win.back {
+    background-color: rgba(20, 20, 20, 0.767);
+    transition: all 2s;
+  }
+  footer .modal__win.show {
+    /* 전체 배경 */
+    animation: slideOutUp 1s ease forwards;
+    display: block;
+  }
+  footer .modal__win.show.hide {
+    animation: slideOutDown 0.3s 0.5s ease backwards;
+    display: none;
+  }
+  footer .modal__win.show .modal__close {
+    /* 닫기 배경 */
+  }
+  footer .modal__win.show.hide .modal__close {
+    display: none;
+  }
+  @keyframes slideOutUp {
+    from {
+      transform: translate3d(0, 100%, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideOutDown {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      visibility: hidden;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  @keyframes opacityOut {
+    0% {
+      transform: opacity(0);
+    }
+    100% {
+      transform: opacity(1);
+    }
+  }
+  @keyframes opacityIn {
+    0% {
+      transform: opacity(0);
+    }
+    100% {
+      transform: opacity(1);
+    }
+  }
+  @keyframes zoomOut {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
   }
 }
