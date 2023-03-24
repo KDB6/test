@@ -1,0 +1,87 @@
+@import "./common.scss";
+
+@media (max-width: 560px) {
+  .businessSearch {
+    font-family: $noto;
+
+    .search__top {
+      padding: 0 8% 3% 8%;
+      background: #f3f3f3;
+      border-bottom: 0.2rem solid $gray3;
+
+      .prev {
+        padding-top: 11%;
+
+        > h2 {
+          font-weight: $w700;
+          font-size: $b2;
+          margin-left: 3%;
+          line-height: 1;
+        }
+      }
+
+      .search {
+        position: relative;
+        margin-top: 7%;
+
+        .search__input {
+        }
+
+        .search__input-svg {
+          position: absolute;
+          top: 35%;
+          right: 5%;
+        }
+      }
+    }
+
+    .search__all {
+      height: 79vh;
+      overflow-y: scroll;
+      position: relative;
+
+      .search__loading {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+
+        > h2 {
+          font-size: $c1;
+          font-weight: $w500;
+        }
+      }
+
+      .search__info {
+        padding: 0 8%;
+        display: block;
+
+        .search__info-address {
+          border-bottom: 0.2rem solid $gray2;
+          padding: 6% 0;
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          > h2 {
+            font-size: $b2;
+            font-weight: $w500;
+
+            > span {
+              font-weight: $w700;
+            }
+          }
+
+          > p {
+            font-size: $c2;
+            font-weight: $w400;
+            color: $gray1;
+            margin-top: 2.2%;
+          }
+        }
+      }
+    }
+  }
+}

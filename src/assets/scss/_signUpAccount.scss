@@ -1,0 +1,88 @@
+@import "./common.scss";
+
+@media (max-width: 560px) {
+  .signUpAccount {
+    height: 100vh;
+    position: relative;
+
+    > .prev {
+      height: 5vh;
+      margin-top: 11%;
+      z-index: 1;
+    }
+
+    .bar {
+      margin-top: 3%;
+      background: $gray3;
+      width: 120%;
+      height: 3px;
+      position: absolute;
+      left: -10%;
+      z-index: 1;
+
+      .progress {
+        width: 16.7%;
+        height: 3px;
+        background: #000;
+        border-radius: 1rem;
+      }
+    }
+
+    .account__input {
+      margin-top: 12%;
+      height: 70vh;
+      overflow: scroll;
+
+      > h2 {
+        font-size: $h1;
+        font-weight: $w700;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        line-height: 1.2;
+
+        .page {
+          font-weight: $w500;
+          font-size: $c1;
+          color: $white;
+          background: $gray1;
+          border-radius: 0.7rem;
+          padding: 0.4rem 0.6rem;
+        }
+      }
+
+      .account__id {
+        position: relative;
+
+        .account__id-btn {
+          font-family: $noto;
+          font-size: $b3;
+          font-weight: $w500;
+          color: $black;
+          letter-spacing: -0.05rem;
+          background: #f7f7f7;
+          border-radius: 0.8rem;
+          height: 2.6rem !important;
+          padding: 0 0.5rem;
+          //   border: 1px solid $gray2;
+          position: absolute;
+          top: 15%;
+          right: 5%;
+        }
+      }
+
+      .account__text-terms {
+        font-size: $c3;
+        color: $gray1;
+      }
+    }
+
+    .signUpAccount__completion {
+      position: static;
+      width: 100%;
+      top: calc(100% - 90px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

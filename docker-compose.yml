@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  lgup-mobile-web:
+    container_name: lgup-mobile-web
+    image: front
+    environment:
+      - TZ=Asia/Seoul      
+      - NODE_ENV=development
+    ports:
+     - "3000:80"
+    networks:
+      - lgup-network
+    restart: 
+      always
+
+networks:        
+  lgup-network:

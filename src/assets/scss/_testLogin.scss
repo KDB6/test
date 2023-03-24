@@ -1,0 +1,77 @@
+@import "./common.scss";
+
+@media (max-width: 560px) {
+  // TLogin
+  .TLogin {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    // logo
+    .logo {
+      font-size: $h1;
+      font-weight: $w500;
+      text-align: center;
+      color: $gray1;
+    }
+
+    .signIn {
+      margin-top: 15%;
+    }
+
+    // signIn__sub
+    .signIn__sub {
+      margin-top: 15%;
+
+      // find
+      .find {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7%;
+
+        a {
+          padding: 0 1.5rem;
+
+          &:first-child {
+            border-right: 0.1rem solid $black;
+          }
+
+          > h2 {
+            font-weight: $w500;
+          }
+        }
+      }
+
+      .auto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4%;
+
+        > svg {
+          width: 2.6rem;
+          height: 2.6rem;
+        }
+
+        > h2 {
+          font-weight: $w500;
+        }
+      }
+    }
+
+    .signIn__bot {
+      margin-top: 20%;
+
+      > div:last-child {
+        > h2 {
+          font-weight: $w500;
+          font-size: $c2;
+          text-align: center;
+          margin: 1.7rem 0;
+        }
+      }
+    }
+  }
+}

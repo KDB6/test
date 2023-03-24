@@ -1,0 +1,50 @@
+@import "./common.scss";
+
+@media (max-width: 560px) {
+  .findIdCom {
+    height: 100vh;
+
+    .findId__info {
+      margin-top: 30%;
+
+      > h2 {
+        font-size: $h1;
+        font-weight: $w700;
+      }
+
+      .findId__win {
+        margin-top: 13%;
+        padding: 0.5rem 2rem;
+        border: 2px solid $gray3;
+        border-radius: 1rem;
+
+        .findId__win-info {
+          border-bottom: 2px solid $gray3;
+          padding: 1.6rem 0;
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          > h2 {
+            font-size: $b2;
+            font-weight: $w500;
+            width: 30%;
+          }
+
+          > p {
+            font-size: $b2;
+            font-weight: $w500;
+            width: 70%;
+          }
+        }
+      }
+    }
+
+    .findId__completion {
+      position: absolute;
+      width: 100%;
+      bottom: 5%;
+    }
+  }
+}

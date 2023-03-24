@@ -1,0 +1,30 @@
+@import "./common.scss";
+
+@media (max-width: 560px) {
+  .FindPass {
+    height: 100vh;
+
+    .prev {
+      margin-top: 11%;
+    }
+
+    .findPass__title {
+      color: $black;
+      font-size: $h1;
+      font-weight: $w700;
+      margin-top: 10%;
+    }
+
+    .findPass__terms {
+      font-size: $c3;
+      color: $gray1;
+    }
+
+    .findPass__completion {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      bottom: 5%;
+    }
+  }
+}
